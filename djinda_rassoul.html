@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabinet Djinda Rassoul – Kinésithérapie | Keur Massar, Dakar</title>
+<meta name="description" content="Cabinet paramédical de kinésithérapie Djinda Rassoul à Keur Massar (Cité Gendarmerie, Villa N°1020). Rééducation neurologique, orthopédique, post-partum, respiratoire. Tél: 77 715 26 37 / 76 903 82 41">
+<meta name="keywords" content="kinésithérapie Dakar, kinésithérapeute Keur Massar, rééducation neurologique Dakar, cabinet paramédical Sénégal, kinésithérapie AVC Parkinson, rééducation post-partum Dakar, Djinda Rassoul">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Cabinet Djinda Rassoul">
+<meta property="og:title" content="Cabinet Djinda Rassoul – Kinésithérapie Keur Massar">
+<meta property="og:description" content="Cabinet de kinésithérapie à Keur Massar, Dakar. Neurologie, orthopédie, post-partum, respiratoire. Tél: 77 715 26 37">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_SN">
+<link rel="canonical" href="https://djinda-rassoul-kinesitherapie.netlify.app/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Cabinet Djinda Rassoul – Kinésithérapie",
+  "description": "Cabinet paramédical de kinésithérapie à Keur Massar, Dakar. Rééducation neurologique, orthopédique, post-partum et respiratoire pour adultes et enfants.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cité Gendarmerie, Villa N°1020",
+    "addressLocality": "Keur Massar",
+    "addressRegion": "Dakar",
+    "addressCountry": "SN"
+  },
+  "telephone": ["+221777152637", "+221769038241"],
+  "openingHours": "Mo-Sa 08:00-18:00",
+  "medicalSpecialty": ["Neurologie", "Orthopédie", "Rhumatologie", "Neurochirurgie", "Kinésithérapie respiratoire"],
+  "priceRange": "$$"
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #1A4B6E;
+    --teal: #2AABB8;
+    --green: #4CAF82;
+    --cream: #F8FAFB;
+    --gray: #6B7C8A;
+    --light: #E8F4F7;
+    --white: #ffffff;
+    --text: #1C2B38;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(26, 75, 110, 0.97);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%;
+    height: 68px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+  }
+  .nav-brand {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  .nav-brand span { color: var(--teal); }
+  .nav-links {
+    display: flex; gap: 2rem; list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.82);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--teal); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(145deg, var(--navy) 0%, #0D3A56 55%, #0A2E44 100%);
+    display: flex; align-items: center;
+    padding: 100px 5% 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(42,171,184,0.12) 0%, transparent 65%);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 1.2rem;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+  }
+  .hero-title em {
+    font-style: normal;
+    color: var(--teal);
+  }
+  .hero-desc {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.72);
+    font-weight: 300;
+    max-width: 480px;
+    margin-bottom: 2.2rem;
+    line-height: 1.8;
+  }
+  .hero-address {
+    display: flex; align-items: center; gap: 0.6rem;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.88rem;
+    margin-bottom: 2.4rem;
+  }
+  .hero-address svg { flex-shrink: 0; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--teal);
+    color: var(--white);
+    padding: 0.9rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    transition: background 0.25s, transform 0.2s;
+  }
+  .btn-primary:hover { background: #229aA6; transform: translateY(-2px); }
+
+  /* SVG human figure */
+  .hero-figure {
+    display: flex; justify-content: center; align-items: center;
+  }
+  .body-svg {
+    width: 100%; max-width: 340px;
+    opacity: 0;
+    animation: fadeInFig 1.2s ease 0.4s forwards;
+  }
+  @keyframes fadeInFig {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .draw-line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 2.4s ease 0.6s forwards;
+  }
+  @keyframes draw {
+    to { stroke-dashoffset: 0; }
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    background: var(--white);
+    border-bottom: 2px solid var(--light);
+    padding: 1.6rem 5%;
+  }
+  .stats-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem;
+  }
+  .stat-item { text-align: center; }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; font-weight: 700;
+    color: var(--navy);
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.78rem; color: var(--gray);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+
+  /* SECTION COMMON */
+  section { padding: 5rem 5%; }
+  .section-label {
+    font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 0.7rem;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700; color: var(--navy);
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+  }
+  .section-sub {
+    color: var(--gray); font-size: 1rem; max-width: 540px;
+    line-height: 1.8; margin-bottom: 3rem;
+  }
+  .inner { max-width: 1200px; margin: 0 auto; }
+
+  /* ACTES */
+  #actes { background: var(--cream); }
+  .actes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.4rem;
+  }
+  .acte-card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.8rem;
+    border-left: 4px solid var(--teal);
+    box-shadow: 0 2px 12px rgba(26,75,110,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .acte-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(26,75,110,0.12);
+  }
+  .acte-icon {
+    width: 48px; height: 48px;
+    background: var(--light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.1rem;
+    font-size: 1.4rem;
+  }
+  .acte-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; font-weight: 600;
+    color: var(--navy); margin-bottom: 0.7rem;
+  }
+  .acte-card ul {
+    list-style: none; padding: 0;
+  }
+  .acte-card ul li {
+    font-size: 0.88rem; color: var(--gray);
+    padding: 0.3rem 0;
+    padding-left: 1.1rem;
+    position: relative;
+    line-height: 1.5;
+  }
+  .acte-card ul li::before {
+    content: '–';
+    position: absolute; left: 0;
+    color: var(--teal);
+  }
+
+  /* PATIENTS */
+  #patients { background: var(--navy); }
+  .patients-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+  }
+  .patient-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(42,171,184,0.25);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex; align-items: flex-start; gap: 1.2rem;
+  }
+  .patient-icon {
+    font-size: 2.2rem; flex-shrink: 0;
+    background: rgba(42,171,184,0.15);
+    width: 58px; height: 58px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+  }
+  .patient-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--white); font-size: 1.1rem; margin-bottom: 0.4rem;
+  }
+  .patient-card p {
+    color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.7;
+  }
+  #patients .section-title { color: var(--white); }
+  #patients .section-sub { color: rgba(255,255,255,0.55); }
+
+  /* LOCALISATION */
+  #localisation { background: var(--white); }
+  .loc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+  }
+  .loc-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; color: var(--navy);
+    margin-bottom: 1.2rem;
+  }
+  .loc-detail {
+    display: flex; align-items: flex-start; gap: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  .loc-detail-icon {
+    width: 38px; height: 38px; flex-shrink: 0;
+    background: var(--light);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--teal);
+  }
+  .loc-detail p { font-size: 0.95rem; color: var(--gray); line-height: 1.7; }
+  .loc-detail strong { color: var(--navy); display: block; margin-bottom: 0.1rem; }
+  .map-placeholder {
+    background: var(--light);
+    border-radius: 10px;
+    height: 340px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 1rem;
+    border: 2px dashed rgba(42,171,184,0.35);
+  }
+  .map-placeholder svg { opacity: 0.45; }
+  .map-placeholder p {
+    font-size: 0.9rem; color: var(--gray); text-align: center;
+  }
+  .map-btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--navy); color: var(--white);
+    padding: 0.75rem 1.6rem; border-radius: 4px;
+    text-decoration: none; font-size: 0.88rem; font-weight: 600;
+    transition: background 0.2s;
+  }
+  .map-btn:hover { background: var(--teal); }
+
+  /* CONTACT */
+  #contact {
+    background: linear-gradient(135deg, var(--light) 0%, #D4EFF3 100%);
+  }
+  .contact-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 3rem;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+    box-shadow: 0 4px 30px rgba(26,75,110,0.1);
+    max-width: 900px; margin: 0 auto;
+  }
+  .contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; color: var(--navy); margin-bottom: 1.5rem;
+  }
+  .cinfo-item {
+    display: flex; align-items: center; gap: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem; color: var(--gray);
+  }
+  .cinfo-item svg { color: var(--teal); flex-shrink: 0; }
+  .contact-form h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; color: var(--navy); margin-bottom: 1.2rem;
+  }
+  .form-group { margin-bottom: 1rem; }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    border: 1.5px solid #D0DDE5;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text);
+    background: var(--cream);
+    transition: border-color 0.2s;
+    outline: none;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus { border-color: var(--teal); }
+  .form-group textarea { resize: vertical; min-height: 90px; }
+  .btn-submit {
+    width: 100%;
+    background: var(--teal);
+    color: var(--white);
+    border: none; cursor: pointer;
+    padding: 0.9rem;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem; font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: background 0.2s;
+  }
+  .btn-submit:hover { background: var(--navy); }
+
+  /* FOOTER */
+  footer {
+    background: #0D2A3D;
+    color: rgba(255,255,255,0.55);
+    text-align: center;
+    padding: 2rem 5%;
+    font-size: 0.83rem;
+  }
+  footer strong { color: rgba(255,255,255,0.85); }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-grid, .patients-grid, .loc-grid, .contact-card {
+      grid-template-columns: 1fr;
+    }
+    .hero-figure { display: none; }
+    section { padding: 3rem 5%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Djinda <span>Rassoul</span></div>
+  <ul class="nav-links">
+    <li><a href="#actes">Nos Actes</a></li>
+    <li><a href="#patients">Patients</a></li>
+    <li><a href="#localisation">Localisation</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Cabinet Paramédical de Kinésithérapie</p>
+      <h1 class="hero-title">
+        Djinda <em>Rassoul</em><br>
+        Votre santé,<br>notre engagement
+      </h1>
+      <p class="hero-desc">
+        Prise en charge globale en kinésithérapie — neurologie, rhumatologie, orthopédie, post-partum et bien plus — pour adultes et enfants à Keur Massar.
+      </p>
+      <div class="hero-address">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Cité Gendarmerie, Villa N°1020 – Keur Massar, Dakar
+      </div>
+      <a href="#contact" class="btn-primary">
+        Prendre rendez-vous
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="hero-figure">
+      <svg class="body-svg" viewBox="0 0 340 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Glow circles -->
+        <circle cx="170" cy="100" r="90" fill="rgba(42,171,184,0.06)"/>
+        <circle cx="170" cy="100" r="60" fill="rgba(42,171,184,0.08)"/>
+        <!-- Human figure outline -->
+        <g class="draw-line">
+          <!-- Head -->
+          <circle cx="170" cy="78" r="38" stroke="#2AABB8" stroke-width="2.5"/>
+          <!-- Neck -->
+          <line x1="170" y1="116" x2="170" y2="138" stroke="#2AABB8" stroke-width="2.5"/>
+          <!-- Torso -->
+          <path d="M120 138 Q95 145 90 185 Q88 220 95 260 L170 270 L245 260 Q252 220 250 185 Q245 145 220 138 Z" stroke="#2AABB8" stroke-width="2.5" fill="rgba(42,171,184,0.05)"/>
+          <!-- Left arm -->
+          <path d="M120 148 Q85 180 75 220 Q70 240 78 260" stroke="#4CAF82" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Right arm -->
+          <path d="M220 148 Q255 180 265 220 Q270 240 262 260" stroke="#4CAF82" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Left leg -->
+          <path d="M140 268 Q132 320 130 360 Q128 390 132 430" stroke="#2AABB8" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Right leg -->
+          <path d="M200 268 Q208 320 210 360 Q212 390 208 430" stroke="#2AABB8" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Left foot -->
+          <path d="M132 430 Q125 440 118 442 Q112 443 110 448" stroke="#2AABB8" stroke-width="2" stroke-linecap="round"/>
+          <!-- Right foot -->
+          <path d="M208 430 Q215 440 222 442 Q228 443 230 448" stroke="#2AABB8" stroke-width="2" stroke-linecap="round"/>
+          <!-- Spine detail -->
+          <line x1="170" y1="138" x2="170" y2="268" stroke="rgba(42,171,184,0.3)" stroke-width="1.5" stroke-dasharray="5,4"/>
+          <!-- Heartbeat line -->
+          <path d="M110 200 L130 200 L140 180 L152 225 L162 200 L230 200" stroke="#4CAF82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <!-- Pulse dot -->
+        <circle cx="170" cy="78" r="5" fill="#2AABB8">
+          <animate attributeName="r" values="5;9;5" dur="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Labels -->
+        <text x="218" y="82" fill="rgba(42,171,184,0.7)" font-size="10" font-family="Inter">Neurologie</text>
+        <line x1="208" y1="80" x2="200" y2="78" stroke="rgba(42,171,184,0.4)" stroke-width="1"/>
+        <text x="36" y="220" fill="rgba(76,175,130,0.7)" font-size="10" font-family="Inter">Orthopédie</text>
+        <line x1="82" y1="218" x2="75" y2="218" stroke="rgba(76,175,130,0.4)" stroke-width="1"/>
+        <text x="224" y="320" fill="rgba(42,171,184,0.7)" font-size="10" font-family="Inter">Rhumatologie</text>
+        <line x1="220" y1="318" x2="210" y2="318" stroke="rgba(42,171,184,0.4)" stroke-width="1"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num">8</span>
+      <span class="stat-label">Spécialités</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Adulte & Enfant</span>
+      <span class="stat-label">Tous âges</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Keur Massar</span>
+      <span class="stat-label">Dakar</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">Sur RDV</span>
+      <span class="stat-label">Disponibilité</span>
+    </div>
+  </div>
+</div>
+
+<!-- ACTES -->
+<section id="actes">
+  <div class="inner">
+    <p class="section-label">Nos soins</p>
+    <h2 class="section-title">Actes & Spécialités</h2>
+    <p class="section-sub">Un accompagnement personnalisé adapté à chaque pathologie, pour retrouver mobilité et qualité de vie.</p>
+    <div class="actes-grid">
+
+      <div class="acte-card">
+        <div class="acte-icon">🧒</div>
+        <h3>Consultations Générales</h3>
+        <ul>
+          <li>Consultation adulte</li>
+          <li>Consultation enfant</li>
+        </ul>
+      </div>
+
+      <div class="acte-card">
+        <div class="acte-icon">🧠</div>
+        <h3>Rééducation en Neurologie</h3>
+        <ul>
+          <li>AVC (Accident Vasculaire Cérébral)</li>
+          <li>Maladie de Parkinson</li>
+          <li>Infirmité Motrice Cérébrale (IMC)</li>
+        </ul>
+      </div>
+
+      <div class="acte-card">
+        <div class="acte-icon">🦴</div>
+        <h3>Rééducation en Neurochirurgie</h3>
+        <ul>
+          <li>Hernie discale opérée</li>
+          <li>Tumeur cérébrale</li>
+          <li>AVC Hémorragique</li>
+          <li>Traumatisme crânien</li>
+          <li>Chirurgie du rachis</li>
+        </ul>
+      </div>
+
+      <div class="acte-card">
+        <div class="acte-icon">🦵</div>
+        <h3>Rééducation en Rhumatologie</h3>
+        <ul>
+          <li>Lombalgie</li>
+          <li>Cervicalgie</li>
+          <li>Gonarthrose</li>
+          <li>Coxarthrose</li>
+        </ul>
+      </div>
+
+      <div class="acte-card">
+        <div class="acte-icon">🏥</div>
+        <h3>Rééducation en Orthopédie</h3>
+        <ul>
+          <li>Prothèse Totale de Hanche (PTH)</li>
+          <li>Ligamentoplastie</li>
+        </ul>
+      </div>
+
+      <div class="acte-card">
+        <div class="acte-icon">🤱</div>
+        <h3>Rééducation Post-Partum</h3>
+        <ul>
+          <li>Rééducation périnéale</li>
+          <li>Rééducation abdominale</li>
+          <li>Retour à l'activité physique</li>
+        </ul>
+      </div>
+
+      <div class="acte-card">
+        <div class="acte-icon">🫁</div>
+        <h3>Kinésithérapie Respiratoire</h3>
+        <ul>
+          <li>Désencombrement bronchique</li>
+          <li>Rééducation de l'insuffisance respiratoire</li>
+          <li>Asthme et pathologies pulmonaires</li>
+        </ul>
+      </div>
+
+      <div class="acte-card">
+        <div class="acte-icon">⚽</div>
+        <h3>Kinésithérapie du Sport</h3>
+        <ul>
+          <li>Entorses et traumatismes sportifs</li>
+          <li>Rééducation musculaire et tendinite</li>
+          <li>Récupération après blessure sportive</li>
+          <li>Prévention et préparation physique</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PATIENTS -->
+<section id="patients">
+  <div class="inner">
+    <p class="section-label" style="color: var(--teal);">Pour qui ?</p>
+    <h2 class="section-title">Nos patients</h2>
+    <p class="section-sub">Nous accueillons et prenons en charge tous nos patients avec soin et bienveillance.</p>
+    <div class="patients-grid">
+      <div class="patient-card">
+        <div class="patient-icon">👶</div>
+        <div>
+          <h3>Enfants</h3>
+          <p>Prise en charge pédiatrique spécialisée pour les troubles moteurs, l'IMC et les pathologies respiratoires de l'enfant.</p>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-icon">🧑</div>
+        <div>
+          <h3>Adultes</h3>
+          <p>Rééducation complète après chirurgie, traumatisme ou pour pathologies chroniques neurologiques et rhumatologiques.</p>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-icon">🤰</div>
+        <div>
+          <h3>Femmes post-partum</h3>
+          <p>Accompagnement dédié après l'accouchement pour la récupération périnéale et abdominale.</p>
+        </div>
+      </div>
+      <div class="patient-card">
+        <div class="patient-icon">🧓</div>
+        <div>
+          <h3>Personnes âgées</h3>
+          <p>Programmes adaptés pour maintenir l'autonomie et améliorer la qualité de vie des seniors atteints de pathologies dégénératives.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALISATION -->
+<section id="localisation">
+  <div class="inner">
+    <p class="section-label">Nous trouver</p>
+    <h2 class="section-title">Localisation du Cabinet</h2>
+    <div class="loc-grid">
+      <div class="loc-info">
+        <h3>Cabinet Djinda Rassoul</h3>
+        <div class="loc-detail">
+          <div class="loc-detail-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div class="loc-detail p">
+            <strong>Adresse</strong>
+            Cité Gendarmerie, Villa N°1020<br>Keur Massar, Dakar, Sénégal
+          </div>
+        </div>
+        <div class="loc-detail">
+          <div class="loc-detail-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12 19.79 19.79 0 01.01 3.38 2 2 0 012 1.22h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <strong>Téléphone</strong>
+            <a href="tel:+221777152637" style="color:var(--navy);text-decoration:none;">77 715 26 37</a><br>
+            <a href="tel:+221769038241" style="color:var(--navy);text-decoration:none;">76 903 82 41</a>
+          </div>
+        </div>
+        <div class="loc-detail">
+          <div class="loc-detail-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <strong>Horaires</strong>
+            Lundi – Samedi : 8h00 – 18h00<br>Sur rendez-vous uniquement
+          </div>
+        </div>
+        <a href="https://maps.google.com/?q=Keur+Massar+Cite+Gendarmerie+Dakar+Senegal" target="_blank" class="map-btn" style="margin-top:1rem;">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+          Voir sur Google Maps
+        </a>
+      </div>
+      <div class="map-placeholder">
+        <svg width="64" height="64" fill="none" stroke="#2AABB8" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <p><strong>Cité Gendarmerie, Villa N°1020</strong><br>Keur Massar — Dakar, Sénégal</p>
+        <a href="https://maps.google.com/?q=Keur+Massar+Cite+Gendarmerie+Dakar+Senegal" target="_blank" class="map-btn">Ouvrir la carte</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="inner">
+    <p class="section-label">Rendez-vous</p>
+    <h2 class="section-title" style="text-align:center; margin-bottom:2rem;">Prendre contact</h2>
+    <div class="contact-card">
+      <div class="contact-info">
+        <h3>Nous contacter</h3>
+        <div class="cinfo-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Villa N°1020, Cité Gendarmerie, Keur Massar
+        </div>
+        <div class="cinfo-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Lun – Sam : 8h00 – 18h00
+        </div>
+        <div class="cinfo-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12 19.79 19.79 0 01.01 3.38 2 2 0 012 1.22h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <div>
+            <a href="tel:+221777152637" style="color:var(--navy);text-decoration:none;font-weight:600;">77 715 26 37</a><br>
+            <a href="tel:+221769038241" style="color:var(--navy);text-decoration:none;font-weight:600;">76 903 82 41</a>
+          </div>
+        </div>
+        <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--gray); line-height:1.8;">
+          Pour une prise en charge optimale, nous vous recommandons de venir avec votre ordonnance médicale et tout compte-rendu utile à votre suivi.
+        </p>
+      </div>
+      <div class="contact-form">
+        <h3>Demande de rendez-vous</h3>
+        <div id="form-success" style="display:none; background:#e8f8f2; border:1.5px solid #4CAF82; border-radius:6px; padding:1rem; color:#2a7a4f; font-size:0.92rem; margin-bottom:1rem;">
+          ✅ Votre demande a bien été envoyée ! Nous vous contacterons rapidement.
+        </div>
+        <div class="form-group">
+          <input type="text" id="f-nom" placeholder="Votre nom complet" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="f-tel" placeholder="Numéro de téléphone" required />
+        </div>
+        <div class="form-group">
+          <select id="f-soin">
+            <option value="" disabled selected>Type de soin souhaité</option>
+            <option>Consultation adulte / enfant</option>
+            <option>Rééducation neurologique</option>
+            <option>Rééducation neurochirurgicale</option>
+            <option>Rééducation rhumatologique</option>
+            <option>Rééducation orthopédique</option>
+            <option>Rééducation post-partum</option>
+            <option>Kinésithérapie respiratoire</option>
+            <option>Kinésithérapie du sport</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="f-msg" placeholder="Message ou précisions (facultatif)"></textarea>
+        </div>
+        <button class="btn-submit" onclick="envoyerRDV()">📧 Envoyer par email</button>
+        <div style="text-align:center; margin: 0.8rem 0; color:var(--gray); font-size:0.85rem;">— ou —</div>
+        <a id="whatsapp-btn" href="#" onclick="ouvrirWhatsApp()" style="display:flex; align-items:center; justify-content:center; gap:0.6rem; background:#25D366; color:#fff; padding:0.9rem; border-radius:5px; text-decoration:none; font-weight:600; font-size:0.95rem; transition:background 0.2s;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Envoyer via WhatsApp
+        </a>
+      </div>
+
+<script>
+function envoyerRDV() {
+  const nom = document.getElementById('f-nom').value.trim();
+  const tel = document.getElementById('f-tel').value.trim();
+  const soin = document.getElementById('f-soin').value;
+  const msg = document.getElementById('f-msg').value.trim();
+
+  if (!nom || !tel || !soin) {
+    alert('Veuillez remplir votre nom, téléphone et le type de soin.');
+    return;
+  }
+
+  const sujet = encodeURIComponent('Demande de RDV – Cabinet Djinda Rassoul');
+  const corps = encodeURIComponent(
+    'Nouvelle demande de rendez-vous\n\n' +
+    'Nom : ' + nom + '\n' +
+    'Téléphone : ' + tel + '\n' +
+    'Soin souhaité : ' + soin + '\n' +
+    (msg ? 'Message : ' + msg : '')
+  );
+
+  window.location.href = 'mailto:cabinetdjindarassoul@gmail.com?subject=' + sujet + '&body=' + corps;
+
+  document.getElementById('form-success').style.display = 'block';
+}
+
+function ouvrirWhatsApp() {
+  const nom = document.getElementById('f-nom').value.trim() || '(non renseigné)';
+  const tel = document.getElementById('f-tel').value.trim() || '(non renseigné)';
+  const soin = document.getElementById('f-soin').value || '(non renseigné)';
+  const msg = document.getElementById('f-msg').value.trim();
+
+  const texte = encodeURIComponent(
+    '🏥 *Demande de RDV – Cabinet Djinda Rassoul*\n\n' +
+    '👤 Nom : ' + nom + '\n' +
+    '📞 Téléphone : ' + tel + '\n' +
+    '🩺 Soin souhaité : ' + soin + '\n' +
+    (msg ? '💬 Message : ' + msg : '')
+  );
+
+  window.open('https://wa.me/221777152637?text=' + texte, '_blank');
+}
+</script>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>Cabinet Djinda Rassoul</strong> — Kinésithérapie · Cité Gendarmerie, Villa N°1020, Keur Massar, Dakar</p>
+  <p style="margin-top:0.5rem;">© 2025 Cabinet Djinda Rassoul. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
